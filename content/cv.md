@@ -26,7 +26,7 @@ PCF control (TypeScript, React, Fluent UI) replacing the stock subgrid where the
 **Dynamics 365 Developer** Mar 2024 – Present
 eMind — Istanbul, Turkey
 - Sole technical owner of a full Dynamics 365 Sales & Customer Service implementation, across dev and production environments.
-- Built and maintain 30+ C# plugin assemblies with a shared services layer, shipped as plugin packages.
+- Built and maintain 80+ C# plugins across 8 assemblies with a shared services layer, shipped as plugin packages.
 - Developed production PCF controls (React + TypeScript), configuration-driven to serve multiple entities from a single codebase (see Selected Projects).
 - Extended forms across the solution with JavaScript for client-side logic and validation.
 - Integrated Dataverse with an external ERP over OAuth2 / REST for real-time stock and order synchronization.

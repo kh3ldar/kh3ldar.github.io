@@ -12,15 +12,25 @@ function skill(id: string, name: string, categorycode: { value: number }, notes:
 
 /** One row per entry in the CV's skills table. */
 export const skillRecords: EntityRecord[] = [
-  skill('csharp', 'C#', LANGUAGES, '30+ plugin assemblies with a shared services layer, shipped as Dataverse plugin packages.'),
+  skill(
+    'csharp',
+    'C#',
+    LANGUAGES,
+    '80+ plugins across 8 assemblies with a shared services layer, shipped as plugin packages. DataversePluginKit is the public rewrite of the pattern.',
+  ),
   skill('typescript', 'TypeScript', LANGUAGES, 'Strict TypeScript in the PCF controls.'),
   skill(
     'javascript',
     'JavaScript',
     LANGUAGES,
-    'Form scripts for client-side logic and validation, and the ribbon launcher that opens ProductAddGrid.',
+    'Form scripts for client-side logic and validation, and the ribbon launcher that opens ProductAddGrid. FormScriptKit tests such scripts offline.',
   ),
-  skill('pcf', 'PCF', POWER_PLATFORM, 'Production controls configured per entity from JSON, hosted on forms and Custom Pages.'),
+  skill(
+    'pcf',
+    'PCF',
+    POWER_PLATFORM,
+    'Production controls configured per entity from JSON, hosted on forms and Custom Pages. PCFControls adds an address picker, a three-control address book, a hold signals panel and a sales desk.',
+  ),
   skill(
     'dataverse-web-api',
     'Dataverse Web API',

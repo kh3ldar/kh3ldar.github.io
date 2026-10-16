@@ -21,6 +21,13 @@ export const positionRecords: EntityRecord[] = [
     },
     timeline: [
       {
+        id: 'emind-published-2',
+        kind: 'auto',
+        date: '2026-10-17',
+        title: 'DataversePluginKit, FormScriptKit and PCFControls published on GitHub',
+        body: 'A C# plugin kit, a form-script test harness and four more PCF controls, written as generic rewrites of patterns from production and open-sourced under the MIT license.',
+      },
+      {
         id: 'emind-published',
         kind: 'auto',
         date: '2026-07-15',
@@ -36,7 +43,7 @@ export const positionRecords: EntityRecord[] = [
       {
         id: 'emind-plugins',
         kind: 'post',
-        title: '30+ C# plugin assemblies',
+        title: '80+ C# plugins across 8 assemblies',
         body: 'Built and maintain them, with a shared services layer, shipped as Dataverse plugin packages.',
       },
       {

@@ -4,7 +4,7 @@ A CV and portfolio presented as a model-driven app, for people who build or hire
 
 ## Principles
 
-- **Config, not code.** Everything the app shows is typed data in `src/data`: entities, option sets, saved views, forms, sitemap, dashboard, commands, the business process flow, and the records. Components render any entity from that metadata and never branch on an entity name. It is the same rule the two PCF controls in the portfolio are built on.
+- **Config, not code.** Everything the app shows is typed data in `src/data`: entities, option sets, saved views, forms, sitemap, dashboard, commands, the business process flow, and the records. Components render any entity from that metadata and never branch on an entity name. It is the same rule the PCF controls in the portfolio are built on.
 - **Faithful chrome, working controls.** Every button does something real, or answers the way the platform would: an error dialog with an error code, an activity ID and a downloadable log.
 - **Tone.** English, dry, short. Jokes live in data, never in component code. Nothing mocks Microsoft, and no Microsoft logos or wordmarks are used. The app is called "Career Hub".
 - **Honest content.** Only facts from the CV and the public READMEs. No invented dates or figures. The eMind implementation is anonymised: no client names, no ERP vendor, no numbers beyond the CV.
@@ -36,6 +36,7 @@ A CV and portfolio presented as a model-driven app, for people who build or hire
 - **Main forms are named "Information"**, as the platform names its defaults. People and companies get initials; other records get their table icon.
 - **Performance.** Pages, the quick create drawer, the dialogs and search load as separate chunks. Global CSS and a boot shell are inline in `index.html`, so first paint does not wait for JavaScript. Lighthouse on the live site scores 96 to 100 for performance.
 - **Grids.** Full list grids keep arrow-key cell navigation. Compact grids, meaning subgrids and dashboard lists, fit their column and let Tab reach the links directly.
+- **Six more projects, one record per repo or control folder (October 2026).** DataversePluginKit and FormScriptKit use two new `project_type` options, C# library and JavaScript library; the PCF records keep type 1. The PCFControls repo is one record per folder, so AddressBook is one record holding three controls. They are generic rewrites of patterns built at eMind, and the records say so. `publishedon` stays empty until the repos are public and is filled in then. A new `project_status`, Published, not deployed, keeps "In production" for the two controls that ran in production. The KPI "PCF controls in production" now counts only those, and its caption names them, because "Both public on GitHub" would have stopped being true.
 - **Tooling.** TypeScript 6 came with the Vite template. Vitest 4.1 and jsdom 29 are pinned because their next majors refuse Node 25.
 
 ## Quality bar

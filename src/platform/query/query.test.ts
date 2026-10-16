@@ -81,7 +81,8 @@ describe('resolveView', () => {
 
   it('keeps confidential projects out of the public view', () => {
     const rows = resolveView(registry, registry.getView('project-public')!).rows
-    expect(rows.map((r) => r.id).sort()).toEqual(['productaddgrid', 'productgrid'])
+    expect(rows).toHaveLength(8)
+    expect(rows.map((r) => r.id)).not.toContain('emind-sales-service')
   })
 
   it('sorts skills by category, then name', () => {
@@ -101,6 +102,7 @@ describe('relatedRecords', () => {
     expect(relatedRecords(registry, fetchxml, 'project', { kind: 'reverse', attribute: 'skills' }).map((r) => r.id).sort()).toEqual([
       'productaddgrid',
       'productgrid',
+      'salesdesk',
     ])
   })
 

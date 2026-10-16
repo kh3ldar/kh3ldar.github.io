@@ -47,15 +47,15 @@ export const dashboards: DashboardDefinition[] = [
       {
         kind: 'kpi',
         id: 'plugins',
-        title: 'Plugin assemblies',
-        caption: 'C#, shipped as Dataverse plugin packages',
-        source: { type: 'static', value: '30+' },
+        title: 'C# plugins',
+        caption: 'Across 8 assemblies, shipped as plugin packages',
+        source: { type: 'static', value: '80+' },
       },
       {
         kind: 'kpi',
         id: 'pcf',
         title: 'PCF controls in production',
-        caption: 'Both public on GitHub',
+        caption: 'ProductGrid and ProductAddGrid, public on GitHub',
         source: {
           type: 'aggregate',
           etn: 'project',

@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Local-only notes for Claude Code sessions
+# Local-only notes and settings for Claude Code sessions
 CLAUDE.md
 docs/PLAN.md
+.claude/settings.local.json
