@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Hub · Barış Kuzu, Dynamics 365 CE Developer</title>
+    <meta name="description" content="Barış Kuzu, Dynamics 365 Customer Engagement developer in Istanbul. CV and portfolio, presented as a model-driven app: PCF controls, C# plugins, ERP integration." />
+    <meta name="author" content="Barış Kuzu" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#002050" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Career Hub · Barış Kuzu" />
+    <meta property="og:description" content="Dynamics 365 CE developer. CV and portfolio, presented as a model-driven app." />
+    <meta property="og:url" content="https://kh3ldar.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      /* Shell chrome colours without a Fluent token (the navy header) and the page canvas. */
+      :root {
+        --ch-header-bg: #002050;
+        --ch-header-fg: #ffffff;
+        --ch-header-hover: rgba(255, 255, 255, 0.12);
+        --ch-header-pressed: rgba(255, 255, 255, 0.2);
+        --ch-header-divider: rgba(255, 255, 255, 0.35);
+        --ch-canvas: #f5f5f5;
+        color-scheme: light;
+      }
+
+      :root[data-theme='dark'] {
+        --ch-header-bg: #0b1a33;
+        --ch-header-fg: #ffffff;
+        --ch-header-hover: rgba(255, 255, 255, 0.1);
+        --ch-header-pressed: rgba(255, 255, 255, 0.18);
+        --ch-header-divider: rgba(255, 255, 255, 0.28);
+        --ch-canvas: #141414;
+        color-scheme: dark;
+      }
+
+      html,
+      body,
+      #root {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background: var(--ch-canvas);
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* The FluentProvider is the app root; it must fill the viewport. */
+      #root > .fui-FluentProvider {
+        height: 100%;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Boot shell: painted before the app's JavaScript arrives, replaced when React renders. */
+      body { font-family: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif; }
+      .boot { display: flex; flex-direction: column; height: 100%; }
+      .boot-header { height: 48px; flex-shrink: 0; display: flex; align-items: center; gap: 12px; padding: 0 16px 0 58px; background: #002050; color: #fff; font-size: 16px; white-space: nowrap; }
+      .boot-header b { font-weight: 600; }
+      .boot-sep { width: 1px; height: 20px; background: rgba(255, 255, 255, 0.35); }
+      .boot-body { flex-grow: 1; display: flex; min-height: 0; }
+      .boot-nav { width: 232px; flex-shrink: 0; background: #f0f0f0; border-right: 1px solid #e0e0e0; }
+      .boot-main { flex-grow: 1; display: flex; align-items: center; justify-content: center; color: #424242; font-size: 14px; gap: 10px; }
+      .boot-spinner { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #c7e0f4; border-top-color: #0f6cbd; animation: boot-spin 0.9s linear infinite; }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+      @media (max-width: 1023px) { .boot-nav { display: none; } .boot-header { padding-left: 100px; } }
+      @media (max-width: 719px) { .boot-header b, .boot-sep { display: none; } }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme='light']) { --ch-canvas: #141414; }
+        .boot-header { background: #0b1a33; }
+        .boot-nav { background: #0a0a0a; border-right-color: #333; }
+        .boot-main { color: #d6d6d6; }
+      }
+      @media (prefers-reduced-motion: reduce) { .boot-spinner { animation: none; } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot" aria-hidden="true">
+        <div class="boot-header"><b>Barış Kuzu</b><span class="boot-sep"></span><span>Career Hub</span></div>
+        <div class="boot-body">
+          <div class="boot-nav"></div>
+          <div class="boot-main"><span class="boot-spinner"></span><span>Working on it...</span></div>
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <main style="font-family: 'Segoe UI', system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5">
+        <h1>Barış Kuzu</h1>
+        <p><strong>Dynamics 365 CE Developer</strong>, Istanbul, Turkey</p>
+        <p>Dynamics 365 Customer Engagement developer and sole technical owner of a full-scale Sales &amp; Customer Service implementation: PCF controls (React + TypeScript), C# plugins, ERP integrations, and workflow automation, end to end.</p>
+        <p>This site is a model-driven app and needs JavaScript. Meanwhile:</p>
+        <ul>
+          <li><a href="/cv/Baris-Kuzu-CV.pdf">Download the CV (PDF)</a></li>
+          <li><a href="mailto:bbariskuzu@gmail.com">bbariskuzu@gmail.com</a></li>
+          <li><a href="https://github.com/kh3ldar">github.com/kh3ldar</a></li>
+          <li><a href="https://www.linkedin.com/in/beratbariskuzu/">linkedin.com/in/beratbariskuzu</a></li>
+        </ul>
+      </main>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
