@@ -54,8 +54,8 @@ export const dashboards: DashboardDefinition[] = [
       {
         kind: 'kpi',
         id: 'pcf',
-        title: 'PCF controls in production',
-        caption: 'ProductGrid and ProductAddGrid, public on GitHub',
+        title: 'PCF projects in production',
+        caption: 'All public on GitHub',
         source: {
           type: 'aggregate',
           etn: 'project',

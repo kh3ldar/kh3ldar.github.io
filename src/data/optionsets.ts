@@ -46,7 +46,6 @@ export const optionSets: OptionSetMetadata[] = [
     name: 'project_status',
     options: [
       { value: 1, label: 'In production', color: 'success' },
-      { value: 2, label: 'Published, not deployed', color: 'informative' },
     ],
   },
   {
